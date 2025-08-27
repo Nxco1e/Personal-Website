@@ -1,0 +1,96 @@
+
+body {
+	font-family: 'IBM Plex Mono', 'Courier New', monospace;
+	background: #f4f1ee;
+	margin: 0;
+	color: #222;
+}
+.iphone {
+	max-width: 800px;
+	margin: 40px auto;
+	border-radius: 32px;
+	box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+	background: #fff;
+	border: 2px solid #e0d7c3;
+	overflow: hidden;
+}
+header {
+	background: #e0d7c3;
+	padding: 1.5rem 1rem 1rem 1rem;
+	text-align: center;
+	border-bottom: 2px solid #b8a989;
+}
+h1 {
+	font-size: 2rem;
+	color: #222;
+	margin-bottom: 0.5rem;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+nav {
+	display: flex;
+	justify-content: space-around;
+	background: #f4f1ee;
+	border-top: 1px solid #e0d7c3;
+	padding: 1rem 0;
+}
+nav a {
+	color: #222;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	padding: 0.3rem 0.7rem;
+	border-radius: 6px;
+	transition: background 0.2s, color 0.2s;
+}
+nav a:hover {
+	background: #e0d7c3;
+	color: #b8a989;
+}
+section {
+	background: #fff;
+	margin: 1.5rem auto;
+	padding: 1.5rem;
+	border-radius: 10px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+	max-width: 600px;
+	font-size: 1rem;
+	line-height: 1.7;
+}
+
+
+form label {
+	display: block;
+	margin-top: 1rem;
+	font-size: 0.95rem;
+	color: #222;
+}
+form input, form textarea {
+	width: 100%;
+	padding: 0.4rem;
+	margin-top: 0.5rem;
+	border-radius: 4px;
+	border: 1px solid #e0d7c3;
+	background: #f4f1ee;
+	font-family: inherit;
+	font-size: 1rem;
+	color: #222;
+}
+form button {
+	margin-top: 1rem;
+	background: #b8a989;
+	color: #fff;
+	border: none;
+	padding: 0.6rem 1.5rem;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
+	font-family: inherit;
+	letter-spacing: 1px;
+	transition: background 0.2s;
+}
+form button:hover {
+	background: #e0d7c3;
+	color: #222;
+}

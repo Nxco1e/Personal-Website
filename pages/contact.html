@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Nicole Shmerkin</title>
+    <link rel="stylesheet" href="../css">
+    <style>
+        body {
+            font-family: 'IBM Plex Mono', 'Courier New', monospace;
+            background: #18181f;
+            margin: 0;
+            color: #000;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            border-radius: 32px;
+            box-shadow: 0 8px 32px rgba(0,255,255,0.10);
+            background: #23232b;
+            border: 2px solid #23232b;
+            overflow: hidden;
+        }
+        header {
+            background: #23232b;
+            padding: 2.5rem 1rem 1.5rem 1rem;
+            text-align: center;
+            border-bottom: 2px solid #18181f;
+        }
+        .profile-pic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1.2rem;
+        }
+        .profile-pic img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #00fff7;
+            box-shadow: 0 0 24px #00fff7, 0 0 8px #ff00ea inset;
+            background: #23232b;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #00fff7;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+            font-weight: 700;
+            text-shadow: 0 0 8px #000000, 0 0 2px #fff;
+        }
+        h2 {
+            font-size: 1.2rem;
+            color: #ff00ea;
+            margin-bottom: 1.2rem;
+            letter-spacing: 1px;
+            font-weight: 600;
+            text-shadow: 0 0 8px #ff00ea, 0 0 2px #fff;
+        }
+        section {
+            padding: 2rem;
+            text-align: left;
+        }
+        form label {
+            display: block;
+            margin-top: 1rem;
+            color: #000;
+            font-size: 1rem;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border-radius: 6px;
+            border: 1px solid #000000;
+            background: #e0e0e0;
+            color: #000;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        form button {
+            margin-top: 1rem;
+            background: #ff00ea;
+            color: #fff;
+            border: none;
+            padding: 0.7rem 2rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-family: inherit;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px #ff00ea;
+            transition: background 0.2s;
+        }
+        form button:hover {
+            background: #000000;
+            color: #18181f;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background: #18181f;
+            border-top: 1px solid #23232b;
+            padding: 1rem 0;
+        }
+        nav a {
+            color: #00fff7;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            padding: 0.3rem 0.7rem;
+            border-radius: 6px;
+            transition: background 0.2s, color 0.2s;
+        }
+        nav a:hover {
+            background: #ff00ea;
+            color: #18181f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-pic">
+                <img src="../Profile Picture.jpeg" alt="Profile Picture">
+            </div>
+            <nav>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="resume.html">Resume</a>
+                <a href="experience.html">Experience</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <h1>Nicole Shmerkin</h1>
+            <h2>Contact Me</h2>
+        </header>
+        <section>
+            <form action="https://formspree.io/f/xnnbqlak" method="POST" id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="thankYouMessage" style="display:none; margin-top:2rem; color:#000000; font-size:1.2rem; text-align:center;">Thank you for reaching out, I will get back to you soon!</div>
+            <script>
+                document.getElementById('contactForm').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    var form = e.target;
+                    var data = new FormData(form);
+                    fetch(form.action, {
+                        method: 'POST',
+                        body: data,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    }).then(function(response) {
+                        if (response.ok) {
+                            form.style.display = 'none';
+                            document.getElementById('thankYouMessage').style.display = 'block';
+                        } else {
+                            response.json().then(function(data) {
+                                alert(data.error || 'Oops! There was a problem submitting your form');
+                            });
+                        }
+                    }).catch(function(error) {
+                        alert('Oops! There was a problem submitting your form');
+                    });
+                });
+            </script>
+        </section>
+ 
+    </div>
+</body>
+</html>
