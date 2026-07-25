@@ -95,5 +95,8 @@ form button:hover {
 	color: #222;
 }
 p {
-	color:#fff;
+  color: #fff !important;
+}
+section, div, body {
+  color: #fff;
 }
