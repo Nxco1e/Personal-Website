@@ -1,28 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Neon Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <div class="profile-pic">
-                <img src="Profile Picture.jpeg" alt="Profile Picture">
-            </div>
-            <h1>Nicole Shmerkin</h1>
-            <h2>Personal Portfolio</h2>
-            <h2> Bachelor's Of Science in Computer Science, May 2028</h2>
-        </header>
-        <nav>
-            <a href="pages/about.html">About</a>
-            <a href="pages/projects.html">Projects</a>
-            <a href="pages/resume.html">Resume</a>
-            <a href="pages/experience.html">Experience</a>
-            <a href="pages/contact.html">Contact</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicole Shmerkin | Portfolio</title>
+    <meta name="description" content="Nicole Shmerkin portfolio homepage." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="top">
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="top-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="pages/about.html">About</a>
+          <a href="pages/linkedin.html">Education</a>
+          <a href="pages/experience.html">Experience</a>
+          <a href="pages/awards.html">Awards & Leadership</a>
+          <a href="pages/life.html">Outside the Classroom</a>
+          <a href="pages/projects.html">Projects</a>
+          <a href="pages/contact.html">Contact</a>
         </nav>
+      </header>
+
+      <main>
+        <section class="hero section">
+          <div class="hero-copy">
+            <p class="eyebrow">Computer Science Bachelor Of Science Canidate • Cybersecurity Enthusiast</p>
+            <h1>Nicole Shmerkin</h1>
+            <p class="headline">
+              I’m a driven, first-generation Computer Science student building a career at the intersection of technology, security, analysis, and business understanding.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="pages/about.html">View About</a>
+              <a class="btn secondary" href="pages/projects.html">View Projects</a>
+              <a class="btn secondary" href="https://www.linkedin.com/in/nicoleshmerkin" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+            <ul class="quick-facts">
+              <li>B.S. in Computer Science, expected May 2028</li>
+              <li>Minor: Finance</li>
+              <li>Interested in risk, data, and real-world problem solving</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="image-frame">
+              <img src="Profile_Picture.png" alt="Nicole Shmerkin profile portrait" />
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-header">
+            <p class="section-label">Portfolio</p>
+            <h2>Explore a little bit about me!</h2>
+          </div>
+
+          <div class="cards-grid three-up">
+            <article class="panel highlight-card">
+              <span class="mini-tag">About</span>
+              <h3>Who I am</h3>
+              <p>My story, goals, and the mindset behind my work and growth.</p>
+              <div class="project-link"><a href="pages/about.html">Open page</a></div>
+            </article>
+
+            <article class="panel highlight-card">
+              <span class="mini-tag">Education</span>
+              <h3>Academic snapshot</h3>
+              <p>Degree focus, relevant coursework, and the foundation behind my technical interests.</p>
+              <div class="project-link"><a href="pages/linkedin.html">Open page</a></div>
+            </article>
+
+            <article class="panel highlight-card">
+              <span class="mini-tag">Experience</span>
+              <h3>Relevant experience</h3>
+              <p>Internships, mentorships, leadership roles, and the work that shaped my direction.</p>
+              <div class="project-link"><a href="pages/experience.html">Open page</a></div>
+            </article>
+
+            <article class="panel highlight-card">
+              <span class="mini-tag">Leadership</span>
+              <h3>Awards & growth</h3>
+              <p>Leadership development, service, resilience, and impact.</p>
+              <div class="project-link"><a href="pages/awards.html">Open page</a></div>
+            </article>
+
+            <article class="panel highlight-card">
+              <span class="mini-tag">Life</span>
+              <h3>Outside the classroom</h3>
+              <p>Travel, fitness, music, and the experiences that shape me.</p>
+              <div class="project-link"><a href="pages/life.html">Open page</a></div>
+            </article>
+
+            <article class="panel highlight-card">
+              <span class="mini-tag">Projects</span>
+              <h3>Built across industries</h3>
+              <p>Cybersecurity, data projects, productivity, and software work.</p>
+              <div class="project-link"><a href="pages/projects.html">Open page</a></div>
+            </article>
+
+            <article class="panel highlight-card">
+              <span class="mini-tag">Connect</span>
+              <h3>Let’s connect</h3>
+              <p>LinkedIn, GitHub, and resume.</p>
+              <div class="project-link"><a href="pages/contact.html">Open page</a></div>
+            </article>
+          </div>
+        </section>
+      </main>
     </div>
-</body>
+  </body>
 </html>

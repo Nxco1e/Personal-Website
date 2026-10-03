@@ -1,121 +1,67 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Nicole Shmerkin</title>
-    <link rel="stylesheet" href="../css">
-    <style>
-        body {
-            font-family: 'IBM Plex Mono', 'Courier New', monospace;
-            background: #18181f;
-            margin: 0;
-            color: #000;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            border-radius: 32px;
-            box-shadow: 0 8px 32px rgba(0,255,255,0.10);
-            background: #23232b;
-            border: 2px solid #23232b;
-            overflow: hidden;
-        }
-        header {
-            background: #23232b;
-            padding: 2.5rem 1rem 1.5rem 1rem;
-            text-align: center;
-            border-bottom: 2px solid #18181f;
-        }
-        .profile-pic {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 1.2rem;
-        }
-        .profile-pic img {
-            width: 140px;
-            height: 140px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid #00fff7;
-            box-shadow: 0 0 24px #00fff7, 0 0 8px #ff00ea inset;
-            background: #23232b;
-        }
-        h1 {
-            font-size: 2.2rem;
-            color: #00fff7;
-            margin-bottom: 0.5rem;
-            letter-spacing: 2px;
-            font-weight: 700;
-            text-shadow: 0 0 8px #00fff7, 0 0 2px #fff;
-        }
-        h2 {
-            font-size: 1.2rem;
-            color: #ff00ea;
-            margin-bottom: 1.2rem;
-            letter-spacing: 1px;
-            font-weight: 600;
-            text-shadow: 0 0 8px #ff00ea, 0 0 2px #fff;
-        }
-        section {
-            padding: 2rem;
-            text-align: left;
-        }
-        nav {
-            display: flex;
-            justify-content: space-around;
-            background: #18181f;
-            border-top: 1px solid #23232b;
-            padding: 1rem 0;
-        }
-        nav a {
-            color: #00fff7;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 1rem;
-            letter-spacing: 1px;
-            padding: 0.3rem 0.7rem;
-            border-radius: 6px;
-            transition: background 0.2s, color 0.2s;
-        }
-        nav a:hover {
-            background: #ff00ea;
-            color: #18181f;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <div class="profile-pic">
-                <img src="../Profile Picture.jpeg" alt="Profile Picture">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | Nicole Shmerkin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="top-nav" aria-label="Main navigation">
+          <a href="../index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="linkedin.html">Education</a>
+          <a href="experience.html">Experience</a>
+          <a href="awards.html">Awards & Leadership</a>
+          <a href="life.html">Outside the Classroom</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="section-header">
+            <p class="section-label">About Me</p>
+            <h2>Who I am</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="panel">
+              <p>I didn’t grow up with a roadmap for getting into tech. As a first-generation college student at Brooklyn College, a non-target school, I quickly realized that if I wanted to build the career I imagined for myself, I was going to have to be intentional about finding opportunities, asking questions, reaching out to people I didn’t know, and sometimes walking into rooms where I wasn’t sure I belonged yet. </p>
+
+              <p>A lot of my journey has been figuring things out as I go. I didn’t start college already knowing what cybersecurity was, what internships I should be applying for, or how people actually broke into competitive industries. I had to learn those things by putting myself out there. I went to workshops, joined programs, reached out to professionals, found mentors, applied to opportunities even when I wasn’t sure I was qualified, and heard “no” plenty of times along the way. Every experience gave me a little more direction.</p>
+
+              </p>
+              <p>That curiosity eventually led me to computer science and cybersecurity. I started building my technical foundation through my classes, but some of my most important learning happened outside of them. I contributed to an open-source Serverless DNS project, where I gained hands-on experience with secure DNS, privacy, testing, and Git. At Ferrosource, I worked with real financial and operational data and saw firsthand how technology, risk, and business decisions connect. From there, I started building my own cybersecurity projects, experimenting with tools like Splunk and Wireshark, and learning more about threat detection, network security, secure coding, and cyber risk.</p>
+              <p>At the same time, I chose to minor in Finance because I’ve always been curious about how money, markets, and businesses work. I taught myself about investing and options, and the more I learned about finance alongside computer science, the more interested I became in where the two fields overlap. Financial institutions depend on technology every second of the day, and protecting those systems means understanding not only the technical side of security, but also the people, businesses, and risks behind them. That intersection of technology, cybersecurity, risk, and finance is where I see myself building my career.</p>
+
+<p>But my story isn’t just about the internships, programs, or projects listed on my resume. I’ve worked throughout college, including spending more than two years at Carvel, while balancing school, internships, mentorship programs, applications, and everything else that comes with trying to build a future for yourself. There have been plenty of moments where I’ve compared myself to students at schools with bigger recruiting pipelines, stronger alumni networks, or opportunities that seemed to find them before they even had to look.</p>
+
+<p>Being at a non-target school taught me not to wait for opportunities to find me.</p>
+
+<p>If there wasn’t an obvious path, I looked for one. If I didn’t understand something, I asked. If I didn’t have experience with a technology, I found a way to learn it. And if an opportunity felt slightly out of reach, I applied anyway.</p>
+
+<p>That mindset has taken me into rooms I never expected to be in when I first started college. It has given me the chance to learn from engineers, cybersecurity professionals, mentors, professors, and other students who have completely changed the way I think about my future. Each experience has also made me more comfortable with not having everything figured out. I’ve learned that sometimes the best opportunities come from being willing to be the person in the room who asks questions and genuinely wants to learn.</p>
+
+<p>As I’ve gained access to more opportunities, I’ve also become passionate about sharing them. Through Girls Who Code, my work as a Career Ambassador, and the different communities I’m involved in, I try to help other students navigate some of the same things I once had to figure out by myself. Whether that means sharing an internship, helping someone find a resource, mentoring a younger student, or simply telling someone about an opportunity they didn’t know existed, I want the things I learn to reach further than just me.</p>
+
+<p>I’m still figuring out exactly where this journey will take me, and I actually like that. There is still so much I don’t know, so much I want to build, and so many people I want to learn from. I’m interested in cybersecurity, financial services, technology, and the ways all three continue to evolve alongside each other.</p>
+
+<p>What I do know is that I want to build a career at the intersection of technology, risk, cybersecurity, and finance. I want to keep challenging myself technically, understand how organizations protect the systems and information people depend on, and eventually be in a position where I can open doors for other students who may not have started with a roadmap either.</p>
+
+<p>I may come from a non-target school, but I’ve never viewed that as a reason to think smaller. It has taught me how to create my own opportunities, stay curious, and keep showing up even when the path isn’t obvious. And I’m only getting started.</p>
             </div>
-            <nav>
-                <a href="about.html">About</a>
-                <a href="projects.html">Projects</a>
-                <a href="resume.html">Resume</a>
-                <a href="experience.html">Experience</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            <h1>Nicole Shmerkin</h1>
-            <h2>About Me</h2>
-        </header>
-        <section>
-            <p>👩‍💻 I’m a first-generation student at Brooklyn College, studying Computer Science with a passion for coding, software engineering, and machine learning. I’m eager to keep learning, building, and immersing myself in the tech world! </p>
 
-            🍦 When I’m not coding, I’m working full-time serving happiness through ice cream (sprinkles and smiles included 😋).</p>
-
-<p>📈 I love keeping up with the stock market, spotting trends, and helping friends take their first steps into investing.</p>
-
-<p>🚛 I also work as a recruiter for a trucking company, connecting drivers with the right opportunities.</p>
-
-<p>💪 Outside of work and school, you’ll always find me at the gym, pushing myself daily to grow both mentally and physically.</p>
-
-<p>⚡ Tech-driven. People-focused. Always hungry to learn (and yes, for both knowledge and ice cream).</p>
+          </div>
         </section>
-
+      </main>
     </div>
-</body>
+  </body>
 </html>
